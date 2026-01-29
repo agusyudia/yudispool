@@ -208,11 +208,12 @@ export default function LandingPage() {
             <div className="flex items-center justify-between gap-4 mb-6">
               <div>
                 <h2 className="section-title text-xl sm:text-2xl text-sky-950 mb-1">
-                  Layanan Yudi's Pool
+                  {lang === "id" ? "Layanan Yudi's Pool" : "Yudi's Pool Services"}
                 </h2>
                 <p className="text-sm text-sky-900/80 max-w-xl">
-                  Pilih layanan sesuai kebutuhan kolam renang Anda di Bali. Kami bantu dari pembersihan rutin
-                  hingga pembangunan baru dari nol.
+                  {lang === "id"
+                    ? "Pilih layanan sesuai kebutuhan kolam renang Anda di Bali. Kami bantu dari pembersihan rutin hingga pembangunan baru dari nol."
+                    : "Choose the right service for your Bali pool – from regular cleaning to new pool construction and full repairs."}
                 </p>
               </div>
             </div>
