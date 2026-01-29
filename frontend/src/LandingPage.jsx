@@ -427,7 +427,11 @@ export default function LandingPage() {
                       required
                       value={form.message}
                       onChange={handleChange("message")}
-                      placeholder="Contoh: kolam ukuran 3x7m di daerah Canggu, air mulai keruh, pompa kadang mati."
+                      placeholder={
+                        lang === "id"
+                          ? "Contoh: kolam ukuran 3x7m di daerah Canggu, air mulai keruh, pompa kadang mati."
+                          : "Example: 3x7m pool in Canggu area, water getting cloudy, pump sometimes stops."
+                      }
                       className="text-sm min-h-[90px]"
                     />
                   </div>
