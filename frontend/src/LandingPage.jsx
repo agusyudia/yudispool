@@ -357,7 +357,9 @@ export default function LandingPage() {
                 <form className="space-y-4" onSubmit={handleSubmit}>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="text-xs font-medium text-sky-950 mb-1 block">Nama lengkap</label>
+                      <label className="text-xs font-medium text-sky-950 mb-1 block">
+                        {lang === "id" ? "Nama lengkap" : "Full name"}
+                      </label>
                       <Input
                         required
                         value={form.name}
