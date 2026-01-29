@@ -212,12 +212,9 @@ export default function LandingPage() {
                     }`}
                   >
                     <p className="text-xs uppercase tracking-[0.16em] text-sky-900/70">
-                      {lang === "id" && service.id === "cleaning" && "Perawatan Rutin"}
-                      {lang === "id" && service.id === "build" && "Pembuatan Baru"}
-                      {lang === "id" && service.id === "repair" && "Perbaikan"}
-                      {lang === "en" && service.id === "cleaning" && "Regular Cleaning"}
-                      {lang === "en" && service.id === "build" && "New Construction"}
-                      {lang === "en" && service.id === "repair" && "Repair Service"}
+                      {service.id === "cleaning" && "Regular Cleaning"}
+                      {service.id === "build" && "New Construction"}
+                      {service.id === "repair" && "Repair Service"}
                     </p>
                     <p className="text-sm sm:text-base font-semibold text-sky-950">{service.title}</p>
                     <p className="text-xs sm:text-sm text-sky-900/80">{service.short}</p>
