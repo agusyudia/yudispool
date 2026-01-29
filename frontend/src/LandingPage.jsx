@@ -6,21 +6,16 @@ import { Input } from "./components/ui/input";
 import { Textarea } from "./components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./components/ui/select";
 import { toast } from "./components/ui/sonner";
-import { servicesByLang, faqsByLang, testimonialsByLang, initialContactForm } from "./mock";
+import { services, faqs, testimonials, initialContactForm } from "./mock";
 import { Sparkles, Phone, MapPin, Waves, Droplets, Leaf, CheckCircle2 } from "lucide-react";
 
 export default function LandingPage() {
-  const [lang, setLang] = useState("id");
   const [activeServiceId, setActiveServiceId] = useState("cleaning");
   const [form, setForm] = useState(initialContactForm);
 
-  const services = servicesByLang[lang];
-  const faqs = faqsByLang[lang];
-  const testimonials = testimonialsByLang[lang];
-
   const activeService = useMemo(
     () => services.find((s) => s.id === activeServiceId) ?? services[0],
-    [services, activeServiceId]
+    [activeServiceId]
   );
 
   const handleChange = (field) => (eOrValue) => {
