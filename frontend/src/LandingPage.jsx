@@ -318,10 +318,13 @@ export default function LandingPage() {
           <section id="faq" className="mb-16">
             <div className="flex items-center justify-between gap-4 mb-4">
               <div>
-                <h2 className="section-title text-xl sm:text-2xl text-sky-950 mb-1">Pertanyaan yang sering diajukan</h2>
+                <h2 className="section-title text-xl sm:text-2xl text-sky-950 mb-1">
+                  {lang === "id" ? "Pertanyaan yang sering diajukan" : "Frequently asked questions"}
+                </h2>
                 <p className="text-sm text-sky-900/80 max-w-xl">
-                  Masih ragu atau ingin tahu lebih detail? Berikut beberapa pertanyaan yang sering muncul
-                  dari klien kami di Bali.
+                  {lang === "id"
+                    ? "Masih ragu atau ingin tahu lebih detail? Berikut beberapa pertanyaan yang sering muncul dari klien kami di Bali."
+                    : "Still unsure or need more details? Here are some common questions from our Bali clients."}
                 </p>
               </div>
             </div>
