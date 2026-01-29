@@ -371,7 +371,7 @@ export default function LandingPage() {
                   </div>
                   <div>
                     <label className="text-xs font-medium text-sky-950 mb-1 block">
-                      {lang === "id" ? "Ceritakan singkat kondisi kolam" : "Briefly describe your pool condition"}
+                      Briefly describe your pool condition
                     </label>
                     <Textarea
                       required
@@ -387,16 +387,12 @@ export default function LandingPage() {
                   </div>
                   <div>
                     <label className="text-xs font-medium text-sky-950 mb-1 block">
-                      {lang === "id" ? "Waktu kontak yang nyaman" : "Preferred time to contact"}
+                      Preferred time to contact
                     </label>
                     <Input
                       value={form.preferredTime}
                       onChange={handleChange("preferredTime")}
-                      placeholder={
-                        lang === "id"
-                          ? "Contoh: setiap hari setelah jam 16.00 WITA"
-                          : "Example: every day after 4 PM WITA"
-                      }
+                      placeholder="Example: every day after 4 PM WITA"
                       className="text-sm"
                     />
                   </div>
