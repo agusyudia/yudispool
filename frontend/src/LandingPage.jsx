@@ -369,7 +369,9 @@ export default function LandingPage() {
                       />
                     </div>
                     <div>
-                      <label className="text-xs font-medium text-sky-950 mb-1 block">No. HP</label>
+                      <label className="text-xs font-medium text-sky-950 mb-1 block">
+                        {lang === "id" ? "No. HP" : "Phone number"}
+                      </label>
                       <Input
                         required
                         value={form.phone}
@@ -381,7 +383,9 @@ export default function LandingPage() {
                   </div>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="text-xs font-medium text-sky-950 mb-1 block">No. WhatsApp (opsional)</label>
+                      <label className="text-xs font-medium text-sky-950 mb-1 block">
+                        {lang === "id" ? "No. WhatsApp (opsional)" : "WhatsApp number (optional)"}
+                      </label>
                       <Input
                         value={form.whatsapp}
                         onChange={handleChange("whatsapp")}
