@@ -136,14 +136,14 @@ export default function LandingPage() {
                   className="bg-sky-900 text-sky-50 hover:bg-sky-800 shadow-md text-sm px-5"
                   onClick={() => scrollToSection("contact")}
                 >
-                  Pesan Survey Lokasi
+                  {lang === "id" ? "Pesan Survey Lokasi" : "Book On-site Survey"}
                 </Button>
                 <Button
                   variant="outline"
                   className="border-sky-800/40 text-sky-950 hover:bg-sky-50 text-sm px-5"
                   onClick={() => scrollToSection("services")}
                 >
-                  Lihat Paket Layanan
+                  {lang === "id" ? "Lihat Paket Layanan" : "See Service Packages"}
                 </Button>
               </div>
 
