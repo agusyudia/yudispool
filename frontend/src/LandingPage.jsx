@@ -438,11 +438,17 @@ export default function LandingPage() {
                     />
                   </div>
                   <div>
-                    <label className="text-xs font-medium text-sky-950 mb-1 block">Waktu kontak yang nyaman</label>
+                    <label className="text-xs font-medium text-sky-950 mb-1 block">
+                      {lang === "id" ? "Waktu kontak yang nyaman" : "Preferred time to contact"}
+                    </label>
                     <Input
                       value={form.preferredTime}
                       onChange={handleChange("preferredTime")}
-                      placeholder="Contoh: setiap hari setelah jam 16.00 WITA"
+                      placeholder={
+                        lang === "id"
+                          ? "Contoh: setiap hari setelah jam 16.00 WITA"
+                          : "Example: every day after 4 PM WITA"
+                      }
                       className="text-sm"
                     />
                   </div>
