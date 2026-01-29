@@ -263,13 +263,9 @@ export default function LandingPage() {
           <section id="testimonials" className="mb-16">
             <div className="flex items-center justify-between gap-4 mb-6">
               <div>
-                <h2 className="section-title text-xl sm:text-2xl text-sky-950 mb-1">
-                  {lang === "id" ? "Apa kata klien di Bali" : "What our Bali clients say"}
-                </h2>
+                <h2 className="section-title text-xl sm:text-2xl text-sky-950 mb-1">What our Bali clients say</h2>
                 <p className="text-sm text-sky-900/80 max-w-xl">
-                  {lang === "id"
-                    ? "Pemilik villa, property manager, hingga rumah tinggal yang sudah mempercayakan kolam renangnya kepada Yudi's Pool."
-                    : "From villa owners and property managers to private homes who trust Yudi's Pool with their pools."}
+                  From villa owners and property managers to private homes who trust Yudi's Pool with their pools.
                 </p>
               </div>
             </div>
@@ -293,13 +289,9 @@ export default function LandingPage() {
           <section id="faq" className="mb-16">
             <div className="flex items-center justify-between gap-4 mb-4">
               <div>
-                <h2 className="section-title text-xl sm:text-2xl text-sky-950 mb-1">
-                  {lang === "id" ? "Pertanyaan yang sering diajukan" : "Frequently asked questions"}
-                </h2>
+                <h2 className="section-title text-xl sm:text-2xl text-sky-950 mb-1">Frequently asked questions</h2>
                 <p className="text-sm text-sky-900/80 max-w-xl">
-                  {lang === "id"
-                    ? "Masih ragu atau ingin tahu lebih detail? Berikut beberapa pertanyaan yang sering muncul dari klien kami di Bali."
-                    : "Still unsure or need more details? Here are some common questions from our Bali clients."}
+                  Still unsure or need more details? Here are some common questions from our Bali clients.
                 </p>
               </div>
             </div>
