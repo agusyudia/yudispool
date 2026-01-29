@@ -289,11 +289,12 @@ export default function LandingPage() {
             <div className="flex items-center justify-between gap-4 mb-6">
               <div>
                 <h2 className="section-title text-xl sm:text-2xl text-sky-950 mb-1">
-                  Apa kata klien di Bali
+                  {lang === "id" ? "Apa kata klien di Bali" : "What our Bali clients say"}
                 </h2>
                 <p className="text-sm text-sky-900/80 max-w-xl">
-                  Pemilik villa, property manager, hingga rumah tinggal yang sudah mempercayakan kolam renangnya
-                  kepada Yudi's Pool.
+                  {lang === "id"
+                    ? "Pemilik villa, property manager, hingga rumah tinggal yang sudah mempercayakan kolam renangnya kepada Yudi's Pool."
+                    : "From villa owners and property managers to private homes who trust Yudi's Pool with their pools."}
                 </p>
               </div>
             </div>
