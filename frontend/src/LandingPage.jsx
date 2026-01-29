@@ -71,7 +71,7 @@ export default function LandingPage() {
             <Button
               size="sm"
               className="bg-sky-900 text-sky-50 hover:bg-sky-800 shadow-md hidden sm:inline-flex"
-              onClick={() => scrollToSection("contact")}
+              onClick={() => window.open("https://wa.me/6281236246911", "_blank")}
             >
               <Phone size={16} />
               Free Consultation
@@ -151,33 +151,53 @@ export default function LandingPage() {
                   "radial-gradient(circle at 10% 20%, rgba(148, 227, 255, 0.35) 0, transparent 50%), radial-gradient(circle at 80% 80%, rgba(129, 230, 217, 0.4) 0, transparent 50%)",
               }} />
               <div className="relative z-10">
-                <p className="text-[11px] uppercase tracking-[0.24em] text-sky-100 mb-3">Bali Quick Service</p>
-                <h2 className="text-lg font-semibold text-sky-50 mb-2">Need urgent pool repair?</h2>
-                <p className="text-xs text-sky-100 mb-4">
+                <p className="text-[11px] uppercase tracking-[0.24em] text-sky-900 mb-3">Bali Quick Service</p>
+                <h2 className="text-lg font-semibold text-sky-900 mb-2">Need urgent pool repair?</h2>
+                <p className="text-xs text-sky-900 mb-4">
                   Green water, broken pump, or sudden leaks? We are ready to inspect your pool and help you fix it.
                 </p>
-                <ul className="space-y-2 text-xs text-sky-50/95">
+                <ul className="space-y-2 text-xs text-sky-900">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 size={15} className="mt-[2px] text-emerald-300" />
-                    <span>Flexible schedule to match your villa guests.</span>
+                    <CheckCircle2 size={15} className="mt-[2px] text-sky-900" />
+                    <span>Flexible schedule to match your villa guests</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 size={15} className="mt-[2px] text-emerald-300" />
-                    <span>Short report via WhatsApp after each visit.</span>
+                    <CheckCircle2 size={15} className="mt-[2px] text-sky-900" />
+                    <span>Routine pool maintenance (cleaning, vacuuming, brushing walls & tiles)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 size={15} className="mt-[2px] text-emerald-300" />
-                    <span>Transparent pricing before we start.</span>
+                    <CheckCircle2 size={15} className="mt-[2px] text-sky-900" />
+                    <span>Water chemical balancing (pH, chlorine, clarity control)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 size={15} className="mt-[2px] text-sky-900" />
+                    <span>Pump, filter & circulation system inspection</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 size={15} className="mt-[2px] text-sky-900" />
+                    <span>Early detection of leaks or equipment issues</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 size={15} className="mt-[2px] text-sky-900" />
+                    <span>Short inspection & maintenance report via WhatsApp after each visit</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 size={15} className="mt-[2px] text-sky-900" />
+                    <span>Transparent pricing before we start — no hidden costs</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 size={15} className="mt-[2px] text-sky-900" />
+                    <span>Reliable service for villas, private homes, and rental properties</span>
                   </li>
                 </ul>
               </div>
-              <div className="relative z-10 mt-5 flex flex-col gap-2 text-xs text-sky-100/90">
+              <div className="relative z-10 mt-5 flex flex-col gap-2 text-xs text-sky-900">
                 <div className="flex items-center gap-2">
-                  <Phone size={16} className="text-emerald-200" />
-                  <span>Call: +62-xxx-xxxx-xxxx</span>
+                  <Phone size={16} className="text-sky-900" />
+                  <span>Call: +62-812-3624-6911</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <MapPin size={16} className="text-emerald-200" />
+                  <MapPin size={16} className="text-sky-900" />
                   <span>Based in Bali, serving the surrounding areas.</span>
                 </div>
               </div>
@@ -228,32 +248,29 @@ export default function LandingPage() {
                   </button>
                 ))}
               </div>
-              <Card className="p-5 bg-white/90 border-sky-100 shadow-sm">
+              <Card className="p-5 bg-white/90 border-sky-100 shadow-sm sticky top-20">
                 <h3 className="text-sm font-semibold text-sky-950 mb-2">
                   Detail layanan: {activeService.title}
                 </h3>
+
                 <p className="text-xs sm:text-sm text-sky-900/80 mb-4">
                   {activeService.description}
                 </p>
-                <ul className="space-y-2 text-xs text-sky-900/80 mb-4">
-                  <li className="flex gap-2">
-                    <Droplets size={16} className="mt-[2px] text-sky-700" />
-                    <span>Cek kualitas air (pH, chlorine) dan penyesuaian chemical yang aman.</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <Waves size={16} className="mt-[2px] text-sky-700" />
-                    <span>Pemeriksaan pompa, filter, dan sirkulasi agar air tetap bergerak.</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <Leaf size={16} className="mt-[2px] text-sky-700" />
-                    <span>Pembersihan daun, kotoran, serta brushing dinding & lantai kolam.</span>
-                  </li>
+
+                <ul className="space-y-2 text-xs sm:text-sm text-sky-900/80 mb-4">
+                  {activeService.details?.map((item, index) => (
+                    <li key={index} className="flex gap-2">
+                      <Droplets size={16} className="mt-[2px] text-sky-700" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
+
                 <Button
                   className="w-full bg-sky-900 text-sky-50 hover:bg-sky-800 text-sm"
                   onClick={() => scrollToSection("contact")}
                 >
-                  Diskusikan kebutuhan kolam Anda
+                  Let’s discuss your pool needs
                 </Button>
               </Card>
             </div>
@@ -393,10 +410,6 @@ export default function LandingPage() {
                     />
                   </div>
                   <div className="flex flex-wrap items-center justify-between gap-3 pt-1">
-                    <p className="text-[11px] text-sky-900/70 max-w-xs">
-                      This form is still a <span className="font-semibold">dummy / MOCK</span> for demo only. Data is not sent to any
-                      server yet.
-                    </p>
                     <Button
                       type="submit"
                       className="bg-sky-900 text-sky-50 hover:bg-sky-800 text-sm px-6"
@@ -419,7 +432,7 @@ export default function LandingPage() {
                   <Button
                     className="w-full bg-white text-sky-900 hover:bg-sky-50 text-sm mb-4"
                     type="button"
-                    onClick={() => window.open("https://wa.me/62", "_blank")}
+                    onClick={() => window.open("https://wa.me/6281236246911", "_blank")}
                   >
                     Open Yudi's Pool WhatsApp
                   </Button>

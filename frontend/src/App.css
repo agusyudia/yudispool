@@ -10,9 +10,20 @@
 
 .App {
   min-height: 100vh;
-  background: radial-gradient(circle at top left, #e0f7ff 0, #f5fbff 40%, #ffffff 100%);
+  background: radial-gradient(
+    circle at top left,
+    #e0f7ff 0,
+    #f5fbff 40%,
+    #ffffff 100%
+  );
   color: var(--dark-text);
-  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    "Poppins",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
 body {
@@ -43,8 +54,16 @@ body {
   position: absolute;
   inset: -40%;
   background:
-    radial-gradient(circle at top left, rgba(15, 135, 147, 0.16), transparent 55%),
-    radial-gradient(circle at bottom right, rgba(29, 124, 91, 0.14), transparent 55%);
+    radial-gradient(
+      circle at top left,
+      rgba(15, 135, 147, 0.16),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(29, 124, 91, 0.14),
+      transparent 55%
+    );
   opacity: 0.9;
   z-index: -1;
 }
@@ -75,13 +94,13 @@ body {
 }
 
 .floating-chip.chip-1 {
-  top: 16%;
+  top: 10%;
   right: 10%;
 }
 
 .floating-chip.chip-2 {
-  bottom: 10%;
-  left: 8%;
+  top: 58%;
+  left: 24%;
 }
 
 .section-title {
