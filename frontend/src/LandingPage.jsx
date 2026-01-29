@@ -422,7 +422,9 @@ export default function LandingPage() {
                     </div>
                   </div>
                   <div>
-                    <label className="text-xs font-medium text-sky-950 mb-1 block">Ceritakan singkat kondisi kolam</label>
+                    <label className="text-xs font-medium text-sky-950 mb-1 block">
+                      {lang === "id" ? "Ceritakan singkat kondisi kolam" : "Briefly describe your pool condition"}
+                    </label>
                     <Textarea
                       required
                       value={form.message}
