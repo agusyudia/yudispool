@@ -438,8 +438,11 @@ export default function LandingPage() {
 
         {/* Footer */}
         <footer className="footer pt-6 mt-4 text-[11px] text-sky-900/70 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <p>© {new Date().getFullYear()} Yudi's Pool – Jasa kolam renang Bali.</p>
-          <p>Website demo ini masih berbasis React & MOCK, nanti bisa diadaptasi ke WordPress.</p>
+          <p>© {new Date().getFullYear()} Yudi's Pool – Bali pool services.</p>
+          <p>
+            This demo website is built with React and MOCK data. Later it can be connected to a backend or adapted to
+            WordPress.
+          </p>
         </footer>
       </div>
     </div>
