@@ -130,16 +130,16 @@ export default function LandingPage() {
 
               <dl className="grid grid-cols-3 gap-4 text-xs sm:text-sm text-sky-900/80">
                 <div>
-                  <dt className="font-semibold text-sky-950">100+ kolam terawat</dt>
-                  <dd>Villa & rumah pribadi di Bali.</dd>
+                  <dt className="font-semibold text-sky-950">100+ pools maintained</dt>
+                  <dd>Villas & private homes across Bali.</dd>
                 </div>
                 <div>
-                  <dt className="font-semibold text-sky-950">Respon cepat</dt>
-                  <dd>CS via WhatsApp & telepon.</dd>
+                  <dt className="font-semibold text-sky-950">Fast response</dt>
+                  <dd>Support via WhatsApp & phone.</dd>
                 </div>
                 <div>
-                  <dt className="font-semibold text-sky-950">Jaminan puas</dt>
-                  <dd>Foto before-after tiap kunjungan.</dd>
+                  <dt className="font-semibold text-sky-950">Satisfaction focused</dt>
+                  <dd>Before-after photos every visit.</dd>
                 </div>
               </dl>
             </div>
@@ -151,34 +151,34 @@ export default function LandingPage() {
                   "radial-gradient(circle at 10% 20%, rgba(148, 227, 255, 0.35) 0, transparent 50%), radial-gradient(circle at 80% 80%, rgba(129, 230, 217, 0.4) 0, transparent 50%)",
               }} />
               <div className="relative z-10">
-                <p className="text-[11px] uppercase tracking-[0.24em] text-sky-100 mb-3">Layanan Cepat Bali</p>
-                <h2 className="text-lg font-semibold text-sky-50 mb-2">Butuh perbaikan kolam segera?</h2>
+                <p className="text-[11px] uppercase tracking-[0.24em] text-sky-100 mb-3">Bali Quick Service</p>
+                <h2 className="text-lg font-semibold text-sky-50 mb-2">Need urgent pool repair?</h2>
                 <p className="text-xs text-sky-100 mb-4">
-                  Air hijau, pompa rusak, atau kebocoran mendadak? Kami siap survey dan bantu solusi.
+                  Green water, broken pump, or sudden leaks? We are ready to inspect your pool and help you fix it.
                 </p>
                 <ul className="space-y-2 text-xs text-sky-50/95">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 size={15} className="mt-[2px] text-emerald-300" />
-                    <span>Jadwal fleksibel menyesuaikan tamu villa.</span>
+                    <span>Flexible schedule to match your villa guests.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 size={15} className="mt-[2px] text-emerald-300" />
-                    <span>Laporan singkat via WhatsApp setelah pekerjaan.</span>
+                    <span>Short report via WhatsApp after each visit.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 size={15} className="mt-[2px] text-emerald-300" />
-                    <span>Harga disampaikan jelas sebelum mulai.</span>
+                    <span>Transparent pricing before we start.</span>
                   </li>
                 </ul>
               </div>
               <div className="relative z-10 mt-5 flex flex-col gap-2 text-xs text-sky-100/90">
                 <div className="flex items-center gap-2">
                   <Phone size={16} className="text-emerald-200" />
-                  <span>Hubungi langsung: +62-xxx-xxxx-xxxx</span>
+                  <span>Call: +62-xxx-xxxx-xxxx</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin size={16} className="text-emerald-200" />
-                  <span>Berbasis di Bali, melayani area sekitarnya.</span>
+                  <span>Based in Bali, serving the surrounding areas.</span>
                 </div>
               </div>
             </aside>
