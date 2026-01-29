@@ -345,11 +345,14 @@ export default function LandingPage() {
             <div className="grid md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] gap-7 items-start">
               <div className="tropical-card p-6 md:p-7">
                 <h2 className="section-title text-xl sm:text-2xl text-sky-950 mb-1">
-                  Konsultasi gratis untuk kolam renang Anda di Bali
+                  {lang === "id"
+                    ? "Konsultasi gratis untuk kolam renang Anda di Bali"
+                    : "Free consultation for your Bali swimming pool"}
                 </h2>
                 <p className="text-sm text-sky-900/80 mb-5 max-w-xl">
-                  Ceritakan kondisi kolam Anda, lokasi, dan kebutuhan utama. Kami akan merekomendasikan paket
-                  pembersihan, pembuatan, atau perbaikan yang paling pas.
+                  {lang === "id"
+                    ? "Ceritakan kondisi kolam Anda, lokasi, dan kebutuhan utama. Kami akan merekomendasikan paket pembersihan, pembuatan, atau perbaikan yang paling pas."
+                    : "Tell us about your pool condition, location, and main needs. We’ll recommend the most suitable cleaning, construction, or repair package."}
                 </p>
                 <form className="space-y-4" onSubmit={handleSubmit}>
                   <div className="grid sm:grid-cols-2 gap-4">
