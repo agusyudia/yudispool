@@ -398,25 +398,14 @@ export default function LandingPage() {
                   </div>
                   <div className="flex flex-wrap items-center justify-between gap-3 pt-1">
                     <p className="text-[11px] text-sky-900/70 max-w-xs">
-                      {lang === "id"
-                        ? (
-                            <>
-                              Form ini masih <span className="font-semibold">dummy / MOCK</span> untuk demo. Data belum dikirim ke
-                              server manapun.
-                            </>
-                          )
-                        : (
-                            <>
-                              This form is still a <span className="font-semibold">dummy / MOCK</span> for demo only. Data is not sent
-                              to any server yet.
-                            </>
-                          )}
+                      This form is still a <span className="font-semibold">dummy / MOCK</span> for demo only. Data is not sent to any
+                      server yet.
                     </p>
                     <Button
                       type="submit"
                       className="bg-sky-900 text-sky-50 hover:bg-sky-800 text-sm px-6"
                     >
-                      {lang === "id" ? "Kirim permintaan" : "Send request"}
+                      Send request
                     </Button>
                   </div>
                 </form>
