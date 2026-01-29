@@ -55,35 +55,26 @@ export default function LandingPage() {
           </div>
           <nav className="hidden md:flex items-center gap-6 text-xs text-sky-950/80">
             <button className="nav-link" onClick={() => scrollToSection("services")}>
-              {lang === "id" ? "Layanan" : "Services"}
+              Services
             </button>
             <button className="nav-link" onClick={() => scrollToSection("testimonials")}>
-              {lang === "id" ? "Testimoni" : "Testimonials"}
+              Testimonials
             </button>
             <button className="nav-link" onClick={() => scrollToSection("faq")}>
               FAQ
             </button>
             <button className="nav-link" onClick={() => scrollToSection("contact")}>
-              {lang === "id" ? "Kontak" : "Contact"}
+              Contact
             </button>
           </nav>
           <div className="flex items-center gap-3">
-            <button
-              type="button"
-              className="hidden sm:inline-flex text-[11px] px-3 py-1 rounded-full border border-sky-200 bg-white/80 text-sky-900 hover:bg-sky-50"
-              onClick={() => setLang((prev) => (prev === "id" ? "en" : "id"))}
-            >
-              <span className={lang === "id" ? "font-semibold" : "opacity-70"}>ID</span>
-              <span className="mx-1 text-sky-900/50">/</span>
-              <span className={lang === "en" ? "font-semibold" : "opacity-70"}>EN</span>
-            </button>
             <Button
               size="sm"
               className="bg-sky-900 text-sky-50 hover:bg-sky-800 shadow-md hidden sm:inline-flex"
               onClick={() => scrollToSection("contact")}
             >
               <Phone size={16} />
-              {lang === "id" ? "Konsultasi Gratis" : "Free Consultation"}
+              Free Consultation
             </Button>
           </div>
         </header>
