@@ -7,7 +7,7 @@ import { Textarea } from "./components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./components/ui/select";
 import { toast } from "./components/ui/sonner";
 import { services, faqs, testimonials, initialContactForm } from "./mock";
-import { Sparkles, Phone, MapPin, Waves, Droplets, Leaf, CheckCircle2 } from "lucide-react";
+import { Sparkles, Phone, MapPin, Waves, Droplets, Leaf, CheckCircle2, Instagram, Facebook, Music } from "lucide-react";
 
 export default function LandingPage() {
   const [activeServiceId, setActiveServiceId] = useState("cleaning");
@@ -70,11 +70,11 @@ export default function LandingPage() {
           <div className="flex items-center gap-3">
             <Button
               size="sm"
-              className="bg-sky-900 text-sky-50 hover:bg-sky-800 shadow-md hidden sm:inline-flex"
+              className="bg-sky-900 text-sky-50 hover:bg-sky-800 shadow-md sm:inline-flex rounded-full md:rounded-md py-5"
               onClick={() => window.open("https://wa.me/6281236246911", "_blank")}
             >
               <Phone size={16} />
-              Free Consultation
+              <span className="hidden sm:inline">Free Consultation</span>
             </Button>
           </div>
         </header>
@@ -83,14 +83,14 @@ export default function LandingPage() {
         <main>
           <section className="grid lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] gap-8 items-stretch mb-16 mt-6">
             <div className="tropical-card hero-glass p-7 lg:p-9 relative overflow-hidden">
-              <div className="floating-chip chip-1">
+              <div className="floating-chip chip-1 hidden sm:flex">
                 <div className="flex items-center gap-2 text-xs text-sky-900">
                   <Sparkles size={14} className="text-amber-500" />
                   <span>Crystal clear pool, happy guests</span>
                 </div>
               </div>
 
-              <div className="floating-chip chip-2">
+              <div className="floating-chip chip-2 hidden sm:flex">
                 <div className="flex items-center gap-2 text-xs text-sky-900">
                   <Leaf size={14} className="text-emerald-600" />
                   <span>Safe & balanced chemicals</span>
@@ -445,13 +445,51 @@ export default function LandingPage() {
           </section>
         </main>
 
+
         {/* Footer */}
-        <footer className="footer pt-6 mt-4 text-[11px] text-sky-900/70 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <p>© {new Date().getFullYear()} Yudi's Pool – Bali pool services.</p>
+        <footer className="footer pt-6 mt-4 text-[11px] text-sky-900/70 flex flex-col sm:flex-row items-center justify-between gap-4">
+          {/* Left */}
           <p>
-            This demo website is built with React and MOCK data. Later it can be connected to a backend or adapted to
-            WordPress.
+            © {new Date().getFullYear()} <span className="font-medium">Yudi's Pool</span> — Professional pool services in Bali.
           </p>
+
+          {/* Center */}
+          <p className="text-sky-900/60 text-justify max-w-[80%]">
+            We take care of your pool, so you can relax and enjoy every swim.
+          </p>
+
+          {/* Right – Social Media */}
+          <div className="flex items-center gap-3">
+            <a
+              href="https://instagram.com/yourpoolservice"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-pink-600 transition"
+              aria-label="Instagram"
+            >
+              <Instagram className="w-4 h-4" />
+            </a>
+
+            <a
+              href="https://facebook.com/yourpoolservice"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-600 transition"
+              aria-label="Facebook"
+            >
+              <Facebook className="w-4 h-4" />
+            </a>
+
+            <a
+              href="https://tiktok.com/@yourpoolservice"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-black transition"
+              aria-label="TikTok"
+            >
+              <Music className="w-4 h-4" />
+            </a>
+          </div>
         </footer>
       </div>
     </div>
