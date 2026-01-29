@@ -394,7 +394,9 @@ export default function LandingPage() {
                       />
                     </div>
                     <div>
-                      <label className="text-xs font-medium text-sky-950 mb-1 block">Jenis layanan</label>
+                      <label className="text-xs font-medium text-sky-950 mb-1 block">
+                        {lang === "id" ? "Jenis layanan" : "Type of service"}
+                      </label>
                       <Select
                         value={form.serviceType}
                         onValueChange={(v) => handleChange("serviceType")(v)}
@@ -403,10 +405,18 @@ export default function LandingPage() {
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="cleaning">Pembersihan & perawatan rutin</SelectItem>
-                          <SelectItem value="build">Pembuatan kolam renang baru</SelectItem>
-                          <SelectItem value="repair">Perbaikan / renovasi kolam</SelectItem>
-                          <SelectItem value="other">Diskusi kebutuhan khusus</SelectItem>
+                          <SelectItem value="cleaning">
+                            {lang === "id" ? "Pembersihan & perawatan rutin" : "Cleaning & regular maintenance"}
+                          </SelectItem>
+                          <SelectItem value="build">
+                            {lang === "id" ? "Pembuatan kolam renang baru" : "New pool construction"}
+                          </SelectItem>
+                          <SelectItem value="repair">
+                            {lang === "id" ? "Perbaikan / renovasi kolam" : "Pool repair / renovation"}
+                          </SelectItem>
+                          <SelectItem value="other">
+                            {lang === "id" ? "Diskusi kebutuhan khusus" : "Discuss custom needs"}
+                          </SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
