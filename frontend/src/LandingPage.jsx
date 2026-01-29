@@ -25,9 +25,9 @@ export default function LandingPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // MOCK ONLY – belum terkoneksi backend
-    toast("Permintaan terkirim (mock)", {
-      description: "Tim Yudi's Pool akan menghubungi Anda segera.",
+    // MOCK ONLY – not connected to any backend yet
+    toast("Request submitted (mock)", {
+      description: "Our team will contact you shortly.",
     });
     console.log("FORM MOCK SUBMIT", form);
   };
