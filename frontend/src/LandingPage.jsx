@@ -141,12 +141,12 @@ export default function LandingPage() {
                   "radial-gradient(circle at 10% 20%, rgba(148, 227, 255, 0.35) 0, transparent 50%), radial-gradient(circle at 80% 80%, rgba(129, 230, 217, 0.4) 0, transparent 50%)",
               }} />
               <div className="relative z-10">
-                <p className="text-[11px] uppercase tracking-[0.24em] text-sky-100/80 mb-3">Layanan Cepat Bali</p>
-                <h2 className="text-lg font-semibold mb-2">Butuh perbaikan kolam segera?</h2>
-                <p className="text-xs text-sky-100/90 mb-4">
+                <p className="text-[11px] uppercase tracking-[0.24em] text-sky-100 mb-3">Layanan Cepat Bali</p>
+                <h2 className="text-lg font-semibold text-sky-50 mb-2">Butuh perbaikan kolam segera?</h2>
+                <p className="text-xs text-sky-100 mb-4">
                   Air hijau, pompa rusak, atau kebocoran mendadak? Kami siap survey dan bantu solusi.
                 </p>
-                <ul className="space-y-2 text-xs">
+                <ul className="space-y-2 text-xs text-sky-50/95">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 size={15} className="mt-[2px] text-emerald-300" />
                     <span>Jadwal fleksibel menyesuaikan tamu villa.</span>
@@ -161,7 +161,7 @@ export default function LandingPage() {
                   </li>
                 </ul>
               </div>
-              <div className="relative z-10 mt-5 flex flex-col gap-2 text-xs">
+              <div className="relative z-10 mt-5 flex flex-col gap-2 text-xs text-sky-100/90">
                 <div className="flex items-center gap-2">
                   <Phone size={16} className="text-emerald-200" />
                   <span>Hubungi langsung: +62-xxx-xxxx-xxxx</span>
