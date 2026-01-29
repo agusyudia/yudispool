@@ -86,35 +86,30 @@ export default function LandingPage() {
               <div className="floating-chip chip-1">
                 <div className="flex items-center gap-2 text-xs text-sky-900">
                   <Sparkles size={14} className="text-amber-500" />
-                  <span>Kolam jernih, tamu senang</span>
+                  <span>Crystal clear pool, happy guests</span>
                 </div>
               </div>
 
               <div className="floating-chip chip-2">
                 <div className="flex items-center gap-2 text-xs text-sky-900">
                   <Leaf size={14} className="text-emerald-600" />
-                  <span>Chemical aman & seimbang</span>
+                  <span>Safe & balanced chemicals</span>
                 </div>
               </div>
 
               <p className="hero-badge inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 text-sky-900 mb-4 shadow-sm">
                 <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                {lang === "id" ? "Spesialis Kolam Renang Bali" : "Bali Pool Specialist"}
+                Bali Pool Specialist
               </p>
 
               <h1 className="hero-title text-[28px] sm:text-[32px] lg:text-[38px] leading-tight text-sky-950 mb-4">
-                {lang === "id"
-                  ? "Jasa Pembersihan, Pembuatan & Perbaikan Kolam Renang"
-                  : "Pool Cleaning, Construction & Repair Services"}
-                <span className="block hero-highlight">
-                  {lang === "id" ? "khusus wilayah Bali." : "for Bali area only."}
-                </span>
+                Pool Cleaning, Construction & Repair Services
+                <span className="block hero-highlight">for the Bali area only.</span>
               </h1>
 
               <p className="text-sm sm:text-base text-sky-900/80 mb-6 max-w-xl">
-                {lang === "id"
-                  ? "Yudi's Pool membantu pemilik villa, resort, dan rumah pribadi di Bali untuk memiliki kolam renang yang selalu jernih, aman, dan estetik. Dari desain baru, perawatan rutin, hingga perbaikan kebocoran."
-                  : "Yudi's Pool helps villa, resort, and private homeowners in Bali keep their pools crystal clear, safe, and beautiful – from new designs and regular maintenance to leak repairs."}
+                Yudi's Pool helps villa, resort, and private homeowners in Bali keep their pools crystal clear, safe, and
+                beautiful  from new pool design and construction to regular maintenance and leak repairs.
               </p>
 
               <div className="flex flex-wrap gap-3 mb-7">
