@@ -416,20 +416,20 @@ export default function LandingPage() {
                     "radial-gradient(circle at 20% 10%, rgba(255,255,255,0.35) 0, transparent 55%), radial-gradient(circle at 90% 80%, rgba(3, 105, 161, 0.85) 0, transparent 60%)",
                 }} />
                 <div className="relative z-10">
-                  <h3 className="text-base font-semibold mb-2">Lebih cepat lewat WhatsApp</h3>
+                  <h3 className="text-base font-semibold mb-2">Faster via WhatsApp</h3>
                   <p className="text-xs text-sky-100/90 mb-3">
-                    Kirim foto kolam Anda, kami bantu analisa awal dan estimasi biaya secara gratis.
+                    Send us photos of your pool, and we will help with initial analysis and a free cost estimation.
                   </p>
                   <Button
                     className="w-full bg-white text-sky-900 hover:bg-sky-50 text-sm mb-4"
                     type="button"
                     onClick={() => window.open("https://wa.me/62", "_blank")}
                   >
-                    Buka WhatsApp Yudi's Pool
+                    Open Yudi's Pool WhatsApp
                   </Button>
-                  <p className="text-[11px] text-sky-100/80 mb-2">Jam operasional</p>
-                  <p className="text-xs mb-3">Senin – Sabtu, 09.00 – 18.00 WITA</p>
-                  <p className="text-[11px] text-sky-100/80">Area layanan utama: Denpasar, Badung, Gianyar, sekitarnya.</p>
+                  <p className="text-[11px] text-sky-100/80 mb-2">Opening hours</p>
+                  <p className="text-xs mb-3">Monday – Saturday, 09.00 – 18.00 WITA</p>
+                  <p className="text-[11px] text-sky-100/80">Main service areas: Denpasar, Badung, Gianyar, nearby regions.</p>
                 </div>
               </aside>
             </div>
